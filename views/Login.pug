@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Login form
+    body 
+        include index.pug
+        div(style="background-color:#f2f2f2;border-radius:5px;padding:10px;")
+           form(action="/Login" method="post" align="center")
+             h1(style="text-align:center") Login Form
+             label(for="username") UserName 
+             input(type="text" name="username")
+             br
+             br
+             label(for="password") Password 
+             input(type="password" name="password")
+             br
+             br
+             input(type="submit" name="submit" value="login")
